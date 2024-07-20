@@ -628,6 +628,7 @@ ul {
     color:#ffffff;
 }
  .submit-btn {
+
     display: flex;
     min-width: 165px;
     height: 40px;
@@ -636,6 +637,7 @@ ul {
     padding: 8px,16px,8px,24px;
     color: #FFFFFF;
     background-color: #4D5AE5;
+   font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 0.04em;
     line-height: 1.5;
@@ -853,19 +855,24 @@ ul {
    gap: 8px;
 
  }
- .svg-commens {
+ .svg-comments {
    display: inline-flex;
+   border-radius: 2px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   align-items: center;
+   justify-content: center;
+   fill: transparent;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
- .modal-check-text .svg-commens {
+ .modal-check-text .svg-comments {
    
    width: 16px;
    height: 16px;
-   border-radius: 2px;
-   border: 1px solid rgba(46, 47, 66, 0.4);
+   
+   
    display: flex;
-   align-items: center;
-   justify-content: center;
+   
+   
    fill: transparent;
  }
  .modal-check:checked + .modal-check-text span {
