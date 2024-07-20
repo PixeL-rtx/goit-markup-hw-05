@@ -882,7 +882,7 @@ ul {
    
    fill: transparent;
  } */
- .modal-check:checked + .modal-check-text span {
+ .modal-check:checked + .modal-check-text .icon-commets {
    background-color: #404bbf;
    border-radius: 2px;
    fill: #f4f4fd;
