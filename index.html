@@ -403,7 +403,92 @@
                 </li>
             </ul>
            </div>
+          <div class="footer-div-form">
+              <p class="footer-form-title">Subscribe</p>
+              <form class="footer-form">
+                  <input class="footer-input" type="email" name="email"
+                   id="Subscribe" placeholder="E-mail">
+                  <button class="submit-btn" type="submit">Subscribe
+                  </button>
+              </form>
+          </div>
         </div>
     </footer>
+    <div class="ovarlay ">
+        <div class="model">
+            <button class="close-btn" type="button">
+                <svg class="close-ovarlay" width="8" height="8">
+                    <use class="close" href="./images/icons.svg#icon-close-black-18dp-2-1-1-1" ></use>
+                </svg>
+            </button>
+            <p class="ovarlay-itle">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="ovarlay-form">
+               <div class="modal-feild">
+                    <label class="ovarlay-label" for="name">Name</label>
+                      <div class="model-feild-wrap">
+                            <input class="input-ovarlay input" 
+                            type="text" 
+                            name="user-name" 
+                            id="name"
+                            /> 
+                            <svg class="model-icon model-user" width="12" height="12">
+                                <use href="./images/icons.svg#icon-person-black-18dp-1-1"></use>
+                            </svg>
+                      </div>
+               </div>
+                <div class="modal-feild">
+                    <label class="ovarlay-label" for="phone">Phone</label>
+                        <div class="model-feild-wrap">
+                            <input class="input-ovarlay" 
+                            type="tel" 
+                            name="user-email" 
+                            id="phone"
+                            />
+                            <svg class="model-icon model-phone" width="13" height="13">
+                                <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
+                            </svg>
+                        </div>
+                </div>
+                <div>
+                    <label class="ovarlay-label" for="email">Email</label>
+                        <div class="model-feild-wrap">
+                            <input class="input-ovarlay" 
+                            type="email" 
+                            name="user-tel" 
+                            id="email"
+                            />
+                            <svg class="model-icon model-email" width="15" height="12">
+                                <use href="./images/icons.svg#icon-email-black-18dp-1-1"></use>
+                            </svg>
+                        </div>
+                </div class="modal-feild">
+                <div class="modal-feild">
+                    <label class="ovarlay-label" for="comments">Comment</label>
+                    <textarea class="textarea-ovarlay" 
+                    name="user-comments" 
+                    id="comments" 
+                    rows="5" 
+                    placeholder="Text input"></textarea>
+                </div>
+                <div class="modal-feild">
+                   <input 
+                   type="checkbox" 
+                   name="terms" 
+                   id="terms" 
+                   value="true" 
+                   class="modal-check visually-hidden">
+                   <label for="terms"
+                   class="modal-check-text"
+                   ><span>
+                    <svg width="10" height="8">
+                        <use href="./images/icons.svg#icon-Vector-1"></use>
+                    </svg>
+                   </span>I accept the terms and conditions of the Privacy Policy</label>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
