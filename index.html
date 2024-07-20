@@ -406,11 +406,12 @@
           <div class="footer-div-form">
               <p class="footer-form-title">Subscribe</p>
               <form class="footer-form">
-                  <input class="footer-input" type="email" name="email"
+                <label for="emails"></label>
+                  <input class="footer-input" type="email" name="email" id="emails"
                    id="Subscribe" placeholder="E-mail">
                   <button class="submit-btn" type="submit"
                   >Subscribe
-                  <svg class="subscribe-icon" width="24" height="20">
+                  <svg class="subscribe-icon" width="24" height="24">
                     <use class="subs-icon" href="./images/icons.svg#icon-Frame-3-1"></use>
                 </svg>
                   </button>
@@ -430,14 +431,14 @@
             </p>
             <form class="ovarlay-form">
                <div class="modal-feild">
-                    <label class="ovarlay-label" for="name">Name</label>
+                    <label class="ovarlay-label" for="user-name">Name</label>
                       <div class="model-feild-wrap">
                             <input class="input-ovarlay input" 
                             type="text" 
                             name="user-name" 
-                            id="name"
+                            id="user-name"
                             /> 
-                            <svg class="model-icon model-user" width="12" height="12">
+                            <svg class="model-icon model-user" width="18" height="24">
                                 <use href="./images/icons.svg#icon-person-black-18dp-1-1"></use>
                             </svg>
                       </div>
@@ -450,7 +451,7 @@
                             name="user-email" 
                             id="phone"
                             />
-                            <svg class="model-icon model-phone" width="13" height="13">
+                            <svg class="model-icon model-phone" width="18" height="24">
                                 <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
                             </svg>
                         </div>
@@ -463,30 +464,30 @@
                             name="user-tel" 
                             id="email"
                             />
-                            <svg class="model-icon model-email" width="15" height="12">
+                            <svg class="model-icon model-email" width="18" height="24">
                                 <use href="./images/icons.svg#icon-email-black-18dp-1-1"></use>
                             </svg>
                         </div>
                 </div class="modal-feild">
                 <div class="modal-feild">
-                    <label class="ovarlay-label" for="comments">Comment</label>
+                    <label class="ovarlay-label" for="user-comments">Comment</label>
                     <textarea class="textarea-ovarlay" 
                     name="user-comments" 
-                    id="comments" 
+                    id="user-comments" 
                     rows="5" 
                     placeholder="Text input"></textarea>
                 </div>
-                <div class="modal-feild">
+                <div class="modal-feild div-checkbox">
                    <input 
                    type="checkbox" 
                    name="terms" 
-                   id="terms" 
+                   id="user-privacy" 
                    value="true" 
                    class="modal-check visually-hidden">
-                   <label for="terms"
+                   <label for="user-privacy"
                    class="modal-check-text"
                    ><span>
-                    <svg width="10" height="8">
+                    <svg class="svg-commens" width="10" height="8">
                         <use href="./images/icons.svg#icon-Vector-1"></use>
                     </svg>
                    </span>I accept the terms and conditions of the <a class="privacy-lonk">Privacy Policy</a></label>

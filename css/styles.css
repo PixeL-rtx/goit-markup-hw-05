@@ -610,6 +610,10 @@ ul {
     color: #FFFFFF;
     outline: transparent;
     padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
     
 
  }
@@ -621,25 +625,29 @@ ul {
     line-height: 24px;
     letter-spacing: 0.04em;
     text-align: left;
-    color:rgba(255, 255, 255, 1);
+    color:#ffffff;
 }
  .submit-btn {
-  
-    width: 165px;
+    display: flex;
+    min-width: 165px;
     height: 40px;
     border: none;
     border-radius: 4px;
-    padding: 8px,24px,8px,24px;
+    padding: 8px,16px,8px,24px;
     color: #FFFFFF;
     background-color: #4D5AE5;
     font-size: 16px;
     letter-spacing: 0.04em;
-    
+    line-height: 1.5;
+    font-weight: 500;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    
     
  }
  .subscribe-icon{
+   margin-left: 16px;
  }
  .subs-icon {
    display: flex;
@@ -647,7 +655,8 @@ ul {
    height: 20px;
    fill: rgba(255, 255, 255, 1);
    align-items: center;
-   justify-content: center;
+   justify-content: center; 
+   
    
  }
  /* -------------------------------- */
@@ -661,6 +670,7 @@ ul {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
  }
  .is-open {
@@ -673,17 +683,24 @@ ul {
     min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
-    padding:24px;
+    padding: 72px 24px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
  }
  .close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
-    display: block;
+    display: flex;
     margin-bottom: 24px;
     margin-left: auto;
     background-color: #E7E9FC;
@@ -692,7 +709,9 @@ ul {
     border: 1px solid rgba(0,0,0, 0.1);
     padding:0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+    justify-content: center;
  }
 
  .close-ovarlay {
@@ -702,8 +721,8 @@ ul {
 
  .close {
     width: 100%;
-  height: 100%;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .close-btn:hover,
  .close-btn:focus {
@@ -722,7 +741,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 16px;
-
+    color: #2E2F42;
  }
 
  .ovarlay-form {
@@ -736,16 +755,17 @@ ul {
    
 }
  .ovarlay-label {
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 8px;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.04em;
+    line-height: 1.17;
     text-align: left;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: rgba(142, 143, 153, 1);
 
  }
@@ -755,10 +775,12 @@ ul {
    display: flex;
    flex-direction: column;
    border-radius: 4px;
-   border: 1px solid #2E2F4266;
    padding-left: 38px;
    padding-right: 24px;
    outline: transparent;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   background-color: transparent;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .input {
   
@@ -772,17 +794,19 @@ ul {
  .textarea-ovarlay {
    font-size: 12px;
    font-weight: 400;
-   line-height: 14px;
    letter-spacing: 0.04em;
+   line-height: 1.17;
    width: 360px;
    height: 120px;
    border-radius: 4px;
    border: 1px solid #2E2F4266;
-   padding-left: 16px;
-   padding-top: 8px;
+   padding: 8px 16px;
    outline: transparent;
    resize: none;
    margin-bottom: 16px;
+   color: rgba(46, 47, 66, 0.4);
+   background-color: transparent;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
  }
  
@@ -805,6 +829,7 @@ ul {
    left: 16px;
    top: 50%;
    transform: translateY(-50%);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .input-ovarlay:focus + .model-icon {
     fill: #4d5ae5;
@@ -813,10 +838,13 @@ ul {
    width: 13px;
    height: 13px;
  }
+ .div-checkbox {
+   margin-bottom: 24px;
+ }
  .modal-check-text {
    font-size: 12px;
    font-weight: 400;
-   line-height: 14px;
+   line-height: 1.17;
    letter-spacing: 0.04em;
    text-align: left;
    color: rgba(142, 143, 153, 1);
@@ -825,7 +853,11 @@ ul {
    gap: 8px;
 
  }
- .modal-check-text span {
+ .svg-commens {
+   display: inline-flex;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .modal-check-text .svg-commens {
    
    width: 16px;
    height: 16px;
@@ -855,13 +887,18 @@ ul {
 }
 .btn-submit {
    display: block;
-   width: 169px;
+   min-width: 169px;
    height: 56px;
    color: rgba(255, 255, 255, 1);
    font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
    text-align: center;
    border: none;
    border-radius: 4px;
    margin: 24px auto 0;
    background-color: rgba(77, 90, 229, 1);
+   cursor: pointer;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
