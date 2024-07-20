@@ -862,7 +862,7 @@ ul {
 
  }
  .icon-commets {
-   display: inline-flex;
+   
    width: 16px;
    height: 16px;
    border: 1px solid rgba(46, 47, 66, 0.4);
@@ -883,6 +883,7 @@ ul {
    fill: transparent;
  } */
  .modal-check:checked + .modal-check-text .icon-commets {
+   display: inline-flex;
    background-color: #404bbf;
    border-radius: 2px;
    fill: #f4f4fd;
