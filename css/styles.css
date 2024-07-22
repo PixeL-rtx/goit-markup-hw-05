@@ -583,8 +583,8 @@ ul {
  }
  
  .footer-div-form {
-   display: block;
-   margin-left: 80px;
+   
+   margin-left: auto;
  }
 
  .footer-form-title {
@@ -647,8 +647,12 @@ ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
-    
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+ }
+ .submit-btn:hover,
+ .submit-btn:focus {
+   background-color: #404BBF;
  }
  .subscribe-icon{
    margin-left: 16px;
@@ -659,7 +663,8 @@ ul {
    height: 20px;
    fill: rgba(255, 255, 255, 1);
    align-items: center;
-   justify-content: center; 
+   justify-content: center;
+   fill: rgba(255, 255, 255, 1);
    
    
  }
@@ -769,7 +774,7 @@ ul {
     letter-spacing: 0.04em;
     line-height: 1.17;
     text-align: left;
-    margin-top: 8px;
+   
     margin-bottom: 4px;
     color: rgba(142, 143, 153, 1);
 
@@ -811,7 +816,7 @@ ul {
    padding: 8px 16px;
    outline: transparent;
    resize: none;
-   margin-bottom: 16px;
+   
    color: rgba(46, 47, 66, 0.4);
    background-color: transparent;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -838,6 +843,7 @@ ul {
    top: 50%;
    transform: translateY(-50%);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   fill: rgba(46, 47, 66, 1);
  }
  .input-ovarlay:focus + .model-icon {
     fill: #4d5ae5;
@@ -856,7 +862,6 @@ ul {
    letter-spacing: 0.04em;
    text-align: left;
    color: rgba(142, 143, 153, 1);
-   
    align-items: center;
    gap: 8px;
 
@@ -871,6 +876,7 @@ ul {
    align-items: center;
    justify-content: center;
    fill: transparent;
+   margin-right: 8px;
  }
  
  .modal-check:checked + .modal-check-text .icon-commets {
@@ -902,8 +908,12 @@ ul {
    text-align: center;
    border: none;
    border-radius: 4px;
-   margin: 24px auto 0;
+   margin: 0 auto;
    background-color: rgba(77, 90, 229, 1);
    cursor: pointer;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-submit:hover,
+.btn-submit:focus {
+   background-color: #404BBF;
 }
